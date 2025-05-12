@@ -1,6 +1,7 @@
 <template>
   <div class="app-container">
     <h1>gpMEHx: the very very meh GPX editor</h1>
+    <div class="author-link"><a href="https://github.com/etherops/gpmehx" target="_blank">by @etherops</a></div>
     <div class="editor-container">
       <div class="gpx-editor">
         <div class="map-container">
@@ -1222,6 +1223,24 @@ export default {
 h1 {
   text-align: center;
   color: #333;
+}
+
+.author-link {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 15px;
+}
+
+.author-link a {
+  color: #666;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.author-link a:hover {
+  color: #007bff;
+  text-decoration: underline;
 }
 
 .editor-container {
